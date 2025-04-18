@@ -32,14 +32,11 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center py-4 px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="relative h-9 w-9">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div 
-                className="w-0 h-0 border-l-[9px] border-r-[9px] border-b-[16px] border-transparent border-b-kulturni-accent"
-                style={{ filter: 'drop-shadow(0 0 4px #6eaed7)' }}
-              ></div>
-            </div>
-          </div>
+          <img 
+            src="https://cdn.poehali.dev/files/a1ba8fb0-4dce-4b8f-b7d5-5295715c3820.png" 
+            alt="Kulturni.cc Logo" 
+            className="h-8 w-8 object-contain"
+          />
           <span className="text-xl font-medium kulturni-text">Kulturni.cc</span>
         </Link>
 

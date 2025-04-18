@@ -1,13 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import KulturniLogo from "@/components/KulturniLogo";
+import BackgroundParticles from "@/components/BackgroundParticles";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col items-center">
-      <div className="mb-10 w-full flex justify-center">
+    <div className="flex flex-col items-center relative z-10">
+      <BackgroundParticles />
+      
+      <div className="mb-12 w-full flex justify-center">
         <div className="w-full max-w-md mx-auto flex justify-center">
-          <KulturniLogo size="xl" />
+          <img 
+            src="https://cdn.poehali.dev/files/a1ba8fb0-4dce-4b8f-b7d5-5295715c3820.png" 
+            alt="Kulturni.cc Logo" 
+            className="w-56 h-56 object-contain animate-pulse-glow"
+          />
         </div>
       </div>
 
