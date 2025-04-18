@@ -53,11 +53,13 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				kulturni: {
-					DEFAULT: '#141414',
-					foreground: '#f0f0f0',
-					accent: '#1e90ff',
-					muted: '#2a2a2a',
-					border: '#333333'
+					DEFAULT: '#0a0a0a',
+					dark: '#080808',
+					foreground: '#c5d1d9',
+					accent: '#6eaed7',
+					glow: '#25374c',
+					muted: '#101014',
+					border: '#1a1a1e'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -91,11 +93,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-glow': {
+					'0%, 100%': { 
+						opacity: '0.6' 
+					},
+					'50%': { 
+						opacity: '1' 
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-glow': 'pulse-glow 4s ease-in-out infinite'
 			}
 		}
 	},

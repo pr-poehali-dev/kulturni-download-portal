@@ -92,10 +92,56 @@
     @apply bg-kulturni text-kulturni-foreground dark;
   }
 
+  /* Треугольный градиент для стиля Kulturni */
+  .kulturni-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .triangle-glow {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 180px solid #0a0a0a;
+    filter: drop-shadow(0 0 15px #6eaed7);
+  }
+
+  .triangle-inner {
+    position: absolute;
+    top: 20px;
+    left: -80px;
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 140px solid #080808;
+  }
+
+  .kulturni-text {
+    font-family: 'Times New Roman', serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #c5d1d9;
+    text-shadow: 0 0 10px rgba(110, 174, 215, 0.5);
+  }
+
   .kulturni-gradient {
-    background: linear-gradient(to right, #1e90ff, #4b0082);
+    background: linear-gradient(to bottom, #c5d1d9, #6eaed7);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+
+  .kulturni-glow {
+    box-shadow: 0 0 15px rgba(110, 174, 215, 0.3);
+  }
+
+  .kulturni-button {
+    @apply bg-kulturni-accent text-white font-medium py-2 px-4 rounded shadow-md transition-all hover:brightness-110 hover:shadow-lg;
+    box-shadow: 0 0 10px rgba(110, 174, 215, 0.4);
   }
 }
